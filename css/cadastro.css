@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url(./menu.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1B1F27;
+    font-family: 'Source Code Pro', monospace;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-cadastro{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    padding: 35px;
+    width: 355px;
+    height: max-content;
+    background-color: #181920;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.container-cadastro form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.select_produtos{
+    margin-top: 10px;    
+    background-color: #252a34;
+    border: none;
+    border-radius: 8px;
+    height: 45px;
+    outline: none;
+    color: #CBD0F7;
+    padding-left: 10px;
+}
+
+.input_cad{
+    margin-top: 10px;    
+    background-color: #252a34;
+    border: none;
+    border-radius: 8px;
+    height: 45px;
+    outline: none;
+    color: #CBD0F7;
+    padding-left: 10px;
+}
+
+.input_cad[type="number"]::-webkit-outer-spin-button,
+.input_cad[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.input_cad[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+.container_btn_cad{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.btn_cad{
+    text-align: center;
+    margin-top: 10px;    
+    background-color: #252a34;
+    border: none;
+    border-radius: 8px;
+    height: 45px;
+    outline: none;
+    color: #CBD0F7;
+    width: 100px;
+}
+
+.btn_cad:hover{
+    background-color: rgba(255, 255, 255, 0.226);
+    cursor: pointer;
+}
+
+#error {
+    color: white;
+    text-align: center;
+}
+

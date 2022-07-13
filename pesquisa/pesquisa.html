@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/pesquisa.css">
+    <title>Pesquisa de Estoque</title>
+</head>
+
+<body>
+    <section class="container">
+        <nav class="menu_dashboard">
+            <div class="nav-menu">
+                <button class="btn-menu" onclick="logOut()" id="deslogar"> deslogar</button>
+                <button class="btn-menu" id="back_menu"> Menu Anterior</button>
+            </div>
+        </nav>
+        <div class="select_cat">
+            <select name="categoria" id="categoria" class="select_produtos" onchange="selecionarCat()">
+                <option selected>Selecione a Categoria</option>
+                <option value="Pijamas">Pijamas</option>
+                <option value="Calcinhas">Calcinhas</option>
+            </select>
+        </div>
+        <div class="conteudo">
+            <div class="lista_todosProdutos">
+                    <form id="list_prod">
+                        <h1 class="titulo">lista de todos os produtos</h1>
+                    </form>
+            </div>
+
+            <div class="resultado_produto">
+                <form id="produto_selecionado">
+                    <h1 class="titulo">Situação Cadastral</h1>
+                    <input class="input_cad" type="text" placeholder="Nome do Produto" readonly>
+                    <input class="input_cad" type="text" placeholder="Descrição do Produto" readonly>
+                    <input class="input_cad" type="number" min="0" placeholder="Quantidade" readonly>
+                    <input class="input_cad" type="number" min="0" placeholder="Preço Unitario" readonly>
+                </form>
+                <div class="container_btn_cad">
+                    <input id="btn_del" type='submit' value="Deletar Produto" class="btn_cad"></button>
+                    <button class="btn_cad" id="btn_alt"> Alterar Produto </button>
+            </div>
+            <p id="info" class="info"></p>
+        </div>
+        <div class="alteração" id="alt">
+            <form id="alteração_produto">
+                <h1 class="titulo">Alterar Cadastro de Produto</h1>
+                <input class="input_cad" id="produto" type="text" placeholder="Nome do Produto">
+                <input class="input_cad" id="desc" type="text" placeholder="Descrição do Produto">
+                <input class="input_cad" id="quantidade" type="number" min="0" placeholder="Quantidade">
+                <input class="input_cad" id="preço" type="number" min="0" placeholder="Preço Unitario">
+            </form>
+            <div class="container_btn_cad">
+                <button class="btn_cad" id="btn_alt_prod"> Alterar Produto </button>
+                <button class="btn_cad" id="btn_cancel"> Cancelar</button>
+        </div>
+        <p id="info1" class="info"></p>
+        </div>
+
+
+    </section>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="../scripts/firebaseConfig.js"></script>
+    <script src="../scripts/pesquisa.js"></script>
+</body>
+
+</html>

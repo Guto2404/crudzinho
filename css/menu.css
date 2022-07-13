@@ -1,0 +1,25 @@
+.nav-menu {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    background-color: black;
+    min-height: 5vh;
+}
+
+.btn-menu {
+    background-color: #252a34;
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    outline: none;
+    color: #CBD0F7;
+    align-self: center;
+    padding: 5px;
+    margin-right: 5px;
+    box-sizing: content-box;
+}
+
+.btn-menu:hover{
+    background-color: rgba(255, 255, 255, 0.226);
+    cursor: pointer;
+}

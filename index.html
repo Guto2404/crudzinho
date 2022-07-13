@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/telaDeLogin.css">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <section class="container">
+        <div id="menu_login"class="container-login">
+            <div>
+                <img src="./img/Logo3.png">
+            </div>
+            <form>
+                <input class="btn_style" id="email" type="text" placeholder="EMAIL" autofocus>
+                <input class="btn_style" id="senha" type="password" placeholder="SENHA">
+                <input class="btn_login" id="logar" type="submit" value="LOGAR">
+            </form>
+            <p id="error"></p>
+        </div>
+       
+    </section>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="./scripts/firebaseConfig.js"></script>
+    <script src="./scripts/login.js"></script>
+</body>
+
+</html>

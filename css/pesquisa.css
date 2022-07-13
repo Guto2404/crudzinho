@@ -1,0 +1,152 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.conteudo {
+    display: flex;
+    display: inline-flex;
+    width: 100%;
+    padding: 10px;
+    padding: 10px;
+}
+
+.select_cat{
+    width: 100%;
+    padding: 10px;
+}
+
+.select_produtos{
+    background-color: #252a34;
+    border: none;
+    border-radius: 8px;
+    height: 45px;
+    outline: none;
+    color: #CBD0F7;
+    width: 100%;
+}
+
+
+.titulo{
+    align-self: center;
+    margin-bottom: 10px;
+}
+.lista_todosProdutos form{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-left: 30px;
+    margin-right: 20px;
+    height: max-content;
+    background-color: #181920;
+}
+
+.resultado_produto form {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-left: 30px;
+    margin-right: 20px;
+    height: max-content;
+    background-color: #181920;
+    
+}
+
+.container_btn_cad{
+    background-color: #181920;
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+}
+
+
+.alteração{
+    display: none;
+    flex-direction: column;
+}
+
+.alteração form{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-left: 30px;
+    margin-right: 20px;
+    height: max-content;
+    background-color: #181920;
+}
+
+.input_cad{
+    margin-top: 10px;    
+    background-color: #252a34;
+    border: none;
+    border-radius: 8px;
+    height: 45px;
+    outline: none;
+    color: #CBD0F7;
+    padding-left: 10px;
+}
+
+.input_cad[type="number"]::-webkit-outer-spin-button,
+.input_cad[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.input_cad[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+.container_btn_cad{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.btn_cad{
+    text-align: center;
+    margin-top: 10px;    
+    background-color: #252a34;
+    border: none;
+    border-radius: 8px;
+    height: 45px;
+    outline: none;
+    color: #CBD0F7;
+    width: 100px;
+}
+
+.btn_cad:hover{
+    background-color: rgba(255, 255, 255, 0.226);
+    cursor: pointer;
+}
+
+.input_name{
+    margin-top: 10px;    
+    background-color: #252a34;
+    border: none;
+    border-radius: 8px;
+    height: 45px;
+    outline: none;
+    color: #CBD0F7;
+    padding-left: 10px;
+}
+
+.input_name:hover{
+    background-color: rgba(255, 255, 255, 0.226);
+    cursor: pointer;
+}
+
+.info {
+    color: white;
+    text-align: center;
+    background-color: #181920;
+    width: 30vw;
+    margin-left: 30px;
+    margin-right: 20px;
+}

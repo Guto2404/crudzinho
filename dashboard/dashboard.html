@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <title>DashBoard</title>
+</head>
+<body>
+    <nav class="menu_dashboard">
+        <div class="nav-menu">
+            <button class="btn-menu" onclick="logOut()" id="deslogar"> deslogar</button>
+        </div>
+    </nav>
+<section class="cont_menu">
+        <div class="Cadastro" id="btn_cadastro">
+            <h1>Cadastrar Produtos</h1>
+        </div>
+        <div class="Pesquisa" id="btn_pesquisa">
+          <h1>Pesquisar e Alterar Produtos</h1>
+        </div>
+</section>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="../scripts/firebaseConfig.js"></script>
+    <script src="../scripts/logOut.js"></script>
+    <script src="../scripts/dashboard.js"></script>
+</body>
+</html>
