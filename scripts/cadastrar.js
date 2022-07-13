@@ -21,14 +21,10 @@ function selecionarCat() {
         }).then((aProd) => {
             let e = document.getElementById('error')
             e.innerText = "Produto Cadastrado com Sucesso"
-            prod.innerText=""
-                qnt.innerText=""
-                desc.innerText=""
-                pValor.innerText=""
             console.log("Produto cadastrado com sucesso " + "ID: " + aProd.id)
             setTimeout(()=> {
                 e.innerHTML= ""
-                
+                location.reload()
             }, 3000)
         }).catch(error => {
             console.log(error)
