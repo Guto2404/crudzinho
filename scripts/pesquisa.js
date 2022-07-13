@@ -45,10 +45,10 @@ function selecionarCat() {
                             info.innerText = "Exclusão realizada com sucesso"
                             setTimeout(() => {
                                 info.innerHTML = ""
-                            }, 3000)
+                            }, 1000)
                             setTimeout(() => {
                                 location.reload()
-                            }, 3000)
+                            }, 1000)
                         }).catch(error => {
                             console.log(error)
                         })
@@ -116,29 +116,3 @@ let btn_c = document.getElementById("btn_cancel")
 btn_c.addEventListener("click", function(){
     location.reload()
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
