@@ -15,7 +15,7 @@ btn.addEventListener("click", function (event) {
           esconder.style.display = "none"
           setTimeout(() => {
             alert("Bem vindo")
-            window.location.replace('../dashboard/dashboard.html')
+            window.location.replace('./dashboard/dashboard.html')
           }, 1000);
         } else {
           console.log("Usuario ou senha incorreto")
