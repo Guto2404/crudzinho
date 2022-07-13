@@ -25,7 +25,7 @@ function selecionarCat() {
             setTimeout(()=> {
                 e.innerHTML= ""
                 location.reload()
-            }, 3000)
+            }, 1000)
         }).catch(error => {
             console.log(error)
         })
